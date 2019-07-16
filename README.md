@@ -36,9 +36,9 @@ qgen:用于生成测试数据的sql语句,现在有22条查询,2条更新
 
 **3 dbgen工具**
             
-TPC-H数据库的组成被定义为由八个单独的表（基本表）组成,分别时part、 partuspp、 customer 、supplier 、orders、 lineitem 、nation、 nation,除Nation 和Region 表外，其它表与测试的数据量有关，即比例因SF。
+TPC-H数据库的组成被定义为由八个单独的表（基本表）组成,分别时part、 partuspp、 customer 、supplier 、orders、 lineitem 、nation、 region,除nation和region表外，其它表的大小与测试的数据量有关，即比例因SF。
    **参数说明：**
-
+```bash
 dbgen [-{vf}][-T {pcsoPSOL}]
         [-s <scale>][-C <procs>][-S <step>]
 dbgen [-v] [-O m] [-s <scale>] [-U <updates>]
@@ -52,12 +52,13 @@ dbgen [-v] [-O m] [-s <scale>] [-U <updates>]
 -v     -- enable VERBOSE mode
 -T table  Generate the data for a particular table 
     ONLY. Arguments: p -- part/partuspp,c -- customer, s -- supplier, o -- orders/lineitem, n -- nation, r -- region,l -- code (same as n and r), O -- orders, L -- lineitem, P -- part, S -- partsupp
+```
     
-*举例说明*：dbgen 生成100中第一个10G的customer表
+*举例说明*：dbgen 生成100个中第一个10G的customer表
 
 dbgen -S 1 -s 10 -T c -C 100 -v 
 
-这里边的S 和C需要配合使用
+这里边的S和C需要配合使用
 
   
 **4 生成元数据**
@@ -65,6 +66,7 @@ dbgen -S 1 -s 10 -T c -C 100 -v
         具体操作:`dbgen -S 1 -s 30  -C 10 -v` 
         创建脚本create_data.sh实现生成数据，并上传到集群/data目录
 
+```bash
 for i in $(seq 10)
 do
 ./dbgen -S $i -s 30  -C 10 -v  
@@ -76,12 +78,10 @@ do
         mv $word.tbl* data/$word
         hadoop fs -put data/$word /data
 done
-
+```
 *备注* lineitem表非常大，需要设置更多的分片
 
 **5.建表语句:sql/create_table.sql**
 
-**6.导入元数据： sql/load_data.sql**
-
-**7 使用qgen 生成sql语句: 在sql目录下是针对spark sql修改过的sql，可以直接使用**
+**6 使用qgen生成sql语句: 在sql目录下是针对spark sql修改过的sql，可以直接使用**
 
