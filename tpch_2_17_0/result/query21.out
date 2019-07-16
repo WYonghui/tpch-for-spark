@@ -1,225 +1,0 @@
-19/07/16 09:37:02 INFO metastore.HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
-19/07/16 09:37:02 INFO metastore.ObjectStore: ObjectStore, initialize called
-19/07/16 09:37:02 INFO DataNucleus.Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
-19/07/16 09:37:02 INFO DataNucleus.Persistence: Property datanucleus.cache.level2 unknown - will be ignored
-19/07/16 09:37:07 INFO metastore.ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
-19/07/16 09:37:08 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
-19/07/16 09:37:08 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
-19/07/16 09:37:11 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
-19/07/16 09:37:11 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
-19/07/16 09:37:12 INFO metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
-19/07/16 09:37:12 INFO metastore.ObjectStore: Initialized ObjectStore
-19/07/16 09:37:12 WARN metastore.ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 1.2.0
-19/07/16 09:37:12 WARN metastore.ObjectStore: Failed to get database default, returning NoSuchObjectException
-19/07/16 09:37:13 INFO metastore.HiveMetaStore: Added admin role in metastore
-19/07/16 09:37:13 INFO metastore.HiveMetaStore: Added public role in metastore
-19/07/16 09:37:13 INFO metastore.HiveMetaStore: No user is added in admin role, since config is empty
-19/07/16 09:37:13 INFO metastore.HiveMetaStore: 0: get_all_databases
-19/07/16 09:37:13 INFO HiveMetaStore.audit: ugi=root	ip=unknown-ip-addr	cmd=get_all_databases	
-19/07/16 09:37:13 INFO metastore.HiveMetaStore: 0: get_functions: db=default pat=*
-19/07/16 09:37:13 INFO HiveMetaStore.audit: ugi=root	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
-19/07/16 09:37:13 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
-19/07/16 09:37:14 INFO session.SessionState: Created local directory: /tmp/ef0c7561-b319-40d9-a353-d7fdb2908efa_resources
-19/07/16 09:37:14 INFO session.SessionState: Created HDFS directory: /tmp/hive/root/ef0c7561-b319-40d9-a353-d7fdb2908efa
-19/07/16 09:37:14 INFO session.SessionState: Created local directory: /tmp/root/ef0c7561-b319-40d9-a353-d7fdb2908efa
-19/07/16 09:37:14 INFO session.SessionState: Created HDFS directory: /tmp/hive/root/ef0c7561-b319-40d9-a353-d7fdb2908efa/_tmp_space.db
-19/07/16 09:37:19 WARN metastore.ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
-[Stage 0:> (0 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:> (2 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:> (4 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(10 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(16 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(20 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(25 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(30 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(34 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(36 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(39 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(40 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(42 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(43 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(48 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(51 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(54 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(58 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(60 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(61 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(62 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(63 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(67 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(70 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(73 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(78 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(80 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(83 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(84 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(86 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(91 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(93 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:>(96 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:(100 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:(101 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:(103 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:(104 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:(107 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:(109 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:(111 + 20) / 180][Stage 1:>   (0 + 0) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:(114 + 19) / 180][Stage 1:>   (0 + 1) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:(118 + 19) / 180][Stage 1:>   (2 + 1) / 10][Stage 3:>   (0 + 0) / 40][Stage 0:(120 + 18) / 180][Stage 1:=>  (3 + 0) / 10][Stage 3:>   (0 + 2) / 40][Stage 0:(121 + 17) / 180][Stage 1:=>  (3 + 0) / 10][Stage 3:>   (0 + 3) / 40][Stage 0:(123 + 16) / 180][Stage 1:=>  (3 + 1) / 10][Stage 3:>   (0 + 3) / 40][Stage 0:(123 + 16) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (0 + 4) / 40][Stage 0:(128 + 14) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (1 + 5) / 40][Stage 0:(129 + 13) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (2 + 4) / 40][Stage 0:(132 + 13) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (3 + 3) / 40][Stage 0:(134 + 13) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (3 + 3) / 40][Stage 0:(137 + 12) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (3 + 4) / 40][Stage 0:(138 + 12) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (3 + 4) / 40][Stage 0:(138 + 12) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (4 + 4) / 40][Stage 0:(138 + 12) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (6 + 4) / 40][Stage 0:(139 + 12) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (7 + 4) / 40][Stage 0:(141 + 12) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (7 + 4) / 40][Stage 0:(143 + 12) / 180][Stage 1:=>  (4 + 0) / 10][Stage 3:>   (7 + 4) / 40][Stage 0:(144 + 12) / 180][Stage 1:=>  (4 + 2) / 10][Stage 3:>   (9 + 2) / 40][Stage 0:(147 + 12) / 180][Stage 1:===>(9 + 1) / 10][Stage 3:>  (10 + 1) / 40][Stage 0:(149 + 12) / 180][Stage 3:>  (10 + 1) / 40][Stage 7:>  (8 + 7) / 180][Stage 0:(150 + 12) / 180][Stage 3:>  (11 + 0) / 40][Stage 7:>  (8 + 8) / 180][Stage 0:(150 + 12) / 180][Stage 3:>  (11 + 0) / 40][Stage 7:>  (9 + 8) / 180][Stage 0:(150 + 12) / 180][Stage 3:>  (11 + 0) / 40][Stage 7:> (12 + 8) / 180][Stage 0:(152 + 12) / 180][Stage 3:>  (11 + 0) / 40][Stage 7:> (15 + 8) / 180][Stage 0:(153 + 12) / 180][Stage 3:>  (11 + 0) / 40][Stage 7:> (16 + 8) / 180][Stage 0:(154 + 12) / 180][Stage 3:>  (11 + 0) / 40][Stage 7:> (16 + 8) / 180][Stage 0:(155 + 12) / 180][Stage 3:>  (11 + 0) / 40][Stage 7:> (16 + 8) / 180][Stage 0:(157 + 12) / 180][Stage 3:>  (11 + 1) / 40][Stage 7:> (17 + 7) / 180][Stage 0:(159 + 12) / 180][Stage 3:>  (11 + 4) / 40][Stage 7:> (20 + 4) / 180][Stage 0:(161 + 12) / 180][Stage 3:>  (11 + 6) / 40][Stage 7:> (22 + 2) / 180][Stage 0:(162 + 12) / 180][Stage 3:>  (11 + 7) / 40][Stage 7:> (23 + 1) / 180][Stage 0:(162 + 12) / 180][Stage 3:>  (11 + 8) / 40][Stage 7:> (24 + 0) / 180][Stage 0:(163 + 12) / 180][Stage 3:>  (11 + 8) / 40][Stage 7:> (24 + 0) / 180][Stage 0:(165 + 11) / 180][Stage 3:>  (11 + 9) / 40][Stage 7:> (24 + 0) / 180][Stage 0:(166 + 11) / 180][Stage 3:>  (11 + 9) / 40][Stage 7:> (24 + 0) / 180][Stage 0:(167 + 10) / 180][Stage 3:> (11 + 10) / 40][Stage 7:> (24 + 0) / 180][Stage 0:>(169 + 9) / 180][Stage 3:> (11 + 11) / 40][Stage 7:> (24 + 0) / 180][Stage 0:>(171 + 8) / 180][Stage 3:> (11 + 12) / 40][Stage 7:> (24 + 0) / 180][Stage 0:>(173 + 7) / 180][Stage 3:> (11 + 13) / 40][Stage 7:> (24 + 0) / 180][Stage 0:>(174 + 6) / 180][Stage 3:> (12 + 14) / 40][Stage 7:> (24 + 0) / 180][Stage 0:>(175 + 5) / 180][Stage 3:> (13 + 15) / 40][Stage 7:> (24 + 0) / 180][Stage 0:>(175 + 5) / 180][Stage 3:> (14 + 14) / 40][Stage 7:> (24 + 1) / 180][Stage 0:>(176 + 4) / 180][Stage 3:> (15 + 15) / 40][Stage 7:> (24 + 1) / 180][Stage 0:>(177 + 3) / 180][Stage 3:> (16 + 16) / 40][Stage 7:> (24 + 1) / 180][Stage 0:>(177 + 3) / 180][Stage 3:> (18 + 15) / 40][Stage 7:> (24 + 2) / 180][Stage 0:>(177 + 3) / 180][Stage 3:=>(20 + 15) / 40][Stage 7:> (24 + 2) / 180][Stage 0:>(178 + 2) / 180][Stage 3:=>(21 + 15) / 40][Stage 7:> (24 + 3) / 180][Stage 0:>(179 + 1) / 180][Stage 3:=>(24 + 13) / 40][Stage 7:> (25 + 6) / 180][Stage 0:>(179 + 1) / 180][Stage 3:=>(25 + 13) / 40][Stage 7:> (25 + 6) / 180][Stage 3:===========>    (28 + 10) / 40][Stage 7:==>            (25 + 10) / 180][Stage 3:============>    (30 + 9) / 40][Stage 7:==>            (26 + 10) / 180][Stage 3:==============>  (33 + 7) / 40][Stage 7:==>            (26 + 12) / 180][Stage 2:>   (0 + 3) / 10][Stage 3:==>(34 + 6) / 40][Stage 7:>(27 + 11) / 180][Stage 2:>   (0 + 4) / 10][Stage 3:==>(34 + 6) / 40][Stage 7:>(28 + 10) / 180][Stage 2:>   (0 + 6) / 10][Stage 3:==>(37 + 3) / 40][Stage 7:>(32 + 11) / 180][Stage 2:>   (0 + 6) / 10][Stage 3:==>(37 + 3) / 40][Stage 7:>(35 + 11) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(38 + 2) / 40][Stage 7:>(36 + 11) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(37 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(38 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(40 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(43 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(45 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(47 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(49 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(51 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(55 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(57 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(59 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(61 + 12) / 180][Stage 2:>   (0 + 7) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(62 + 12) / 180][Stage 2:>   (0 + 8) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(63 + 11) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (65 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (67 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (69 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (71 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (72 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (73 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (74 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (76 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:>(77 + 10) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (79 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (80 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (82 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (83 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (84 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (85 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (87 + 9) / 180][Stage 2:>  (0 + 10) / 10][Stage 3:==>(39 + 1) / 40][Stage 7:> (88 + 9) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=======>       (90 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=======>       (92 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=======>       (93 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=======>       (94 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=======>       (95 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:========>      (96 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:========>      (99 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=======>      (101 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:========>     (103 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:========>     (105 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:========>     (107 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:========>     (109 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:========>     (112 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:========>     (113 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:========>     (115 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=========>    (117 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=========>    (119 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=========>    (120 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=========>    (122 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=========>    (124 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=========>    (127 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=========>    (128 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:==========>   (130 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:==========>   (132 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:==========>   (133 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:==========>   (137 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:==========>   (139 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:==========>   (140 + 10) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:===========>   (142 + 9) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:============>  (144 + 9) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:============>  (149 + 7) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:============>  (150 + 7) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:============>  (151 + 7) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:============>  (152 + 8) / 180][Stage 2:>                (0 + 10) / 10][Stage 7:=============> (156 + 6) / 180][Stage 2:=>                (1 + 9) / 10][Stage 7:=============> (157 + 6) / 180][Stage 2:===>              (2 + 8) / 10][Stage 7:=============> (158 + 6) / 180][Stage 2:=====>            (3 + 7) / 10][Stage 7:=============> (158 + 7) / 180][Stage 2:=====>            (3 + 7) / 10][Stage 7:=============> (159 + 6) / 180][Stage 2:=====>            (3 + 7) / 10][Stage 7:=============> (161 + 4) / 180][Stage 2:=======>          (4 + 6) / 10][Stage 7:=============> (163 + 2) / 180][Stage 2:=======>          (4 + 6) / 10][Stage 7:=============> (164 + 2) / 180][Stage 2:=========>        (5 + 5) / 10][Stage 7:=============> (165 + 3) / 180][Stage 2:==========>       (6 + 4) / 10][Stage 7:=============> (165 + 4) / 180][Stage 2:============>     (7 + 3) / 10][Stage 7:=============> (165 + 5) / 180][Stage 2:==============>   (8 + 2) / 10][Stage 7:=============> (166 + 6) / 180][Stage 2:================> (9 + 1) / 10][Stage 7:=============> (166 + 7) / 180][Stage 2:================> (9 + 1) / 10][Stage 7:=============> (167 + 7) / 180][Stage 7:===================================================>   (168 + 8) / 180][Stage 7:===================================================>   (169 + 7) / 180][Stage 7:====================================================>  (171 + 5) / 180][Stage 4:>                 (0 + 3) / 10][Stage 7:==============>(171 + 5) / 180][Stage 4:>                 (0 + 4) / 10][Stage 7:==============>(172 + 4) / 180][Stage 4:>                 (0 + 5) / 10][Stage 7:==============>(173 + 3) / 180][Stage 4:>                 (0 + 7) / 10][Stage 7:==============>(175 + 1) / 180][Stage 4:>                 (0 + 8) / 10][Stage 7:==============>(176 + 0) / 180][Stage 4:>                 (0 + 8) / 10][Stage 7:==============>(176 + 4) / 180][Stage 4:>                (0 + 10) / 10][Stage 7:==============>(176 + 4) / 180][Stage 4:>                (0 + 10) / 10][Stage 7:==============>(177 + 3) / 180][Stage 4:>                (0 + 10) / 10][Stage 7:==============>(178 + 2) / 180][Stage 4:>                (0 + 10) / 10][Stage 7:==============>(179 + 1) / 180][Stage 4:>                                                        (0 + 10) / 10][Stage 4:=====>                                                    (1 + 9) / 10][Stage 4:===========>                                              (2 + 8) / 10][Stage 4:=================>                                        (3 + 7) / 10][Stage 4:=======================>                                  (4 + 6) / 10][Stage 4:=============================>                            (5 + 5) / 10][Stage 4:==================================>                       (6 + 4) / 10][Stage 4:========================================>                 (7 + 3) / 10][Stage 4:==============================================>           (8 + 2) / 10][Stage 4:====================================================>     (9 + 1) / 10][Stage 6:>                                                         (0 + 8) / 10][Stage 6:>                                                        (0 + 10) / 10][Stage 6:=====>                                                    (1 + 9) / 10][Stage 6:===========>                                              (2 + 8) / 10][Stage 6:=================>                                        (3 + 7) / 10][Stage 6:=======================>                                  (4 + 6) / 10][Stage 6:=============================>                            (5 + 5) / 10][Stage 6:==================================>                       (6 + 4) / 10][Stage 6:========================================>                 (7 + 3) / 10][Stage 6:==============================================>           (8 + 2) / 10][Stage 6:====================================================>     (9 + 1) / 10][Stage 8:>                                                       (0 + 4) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800][Stage 8:>                                                      (0 + 20) / 1800]19/07/16 09:59:52 ERROR thriftserver.SparkSQLDriver: Failed in [
-select
-         s_name,
-         count(*) as numwait
-from
-         supplier,
-         lineitem l1,
-         orders,
-         nation,
-         (
-                   select
-                            l_orderkey m2_l_orderkey,
-                            l_suppkey m2_l_suppkey
-                   from
-                            lineitem l2
-         ) v2,
-         (
-                   select
-                            l_orderkey m3_l_orderkey,
-                            l_suppkey m3_l_suppkey
-                   from
-                            lineitem l3
-                   where
-                            l3.l_receiptdate > l3.l_commitdate
-         ) V3
-where
-         s_suppkey = l1.l_suppkey
-         and o_orderkey = l1.l_orderkey
-         and o_orderstatus = 'F'
-         and l1.l_receiptdate > l1.l_commitdate
-         and v2.m2_l_orderkey = l1.l_orderkey
-         and v2.m2_l_suppkey <> l1.l_suppkey
-         and (v3.m3_l_orderkey <> l1.l_orderkey or v3.m3_l_suppkey = l1.l_suppkey)
-         and s_nationkey = n_nationkey
-         and n_name = 'SAUDI ARABIA'
-group by
-         s_name
-order by
-         numwait desc,
-         s_name]
-org.apache.spark.SparkException: Job 0 cancelled because SparkContext was shut down
-	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:809)
-	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:807)
-	at scala.collection.mutable.HashSet.foreach(HashSet.scala:78)
-	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:807)
-	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:1808)
-	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:83)
-	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1727)
-	at org.apache.spark.SparkContext$$anonfun$stop$8.apply$mcV$sp(SparkContext.scala:1928)
-	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1320)
-	at org.apache.spark.SparkContext.stop(SparkContext.scala:1927)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLEnv$.stop(SparkSQLEnv.scala:67)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver$$anonfun$main$1.apply$mcV$sp(SparkSQLCLIDriver.scala:118)
-	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1951)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
-	at scala.util.Try$.apply(Try.scala:192)
-	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
-	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:54)
-	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:619)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2029)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2050)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2069)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2094)
-	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:944)
-	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
-	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
-	at org.apache.spark.rdd.RDD.withScope(RDD.scala:362)
-	at org.apache.spark.rdd.RDD.collect(RDD.scala:943)
-	at org.apache.spark.RangePartitioner$.sketch(Partitioner.scala:269)
-	at org.apache.spark.RangePartitioner.<init>(Partitioner.scala:131)
-	at org.apache.spark.sql.execution.exchange.ShuffleExchange$.prepareShuffleDependency(ShuffleExchange.scala:225)
-	at org.apache.spark.sql.execution.exchange.ShuffleExchange.prepareShuffleDependency(ShuffleExchange.scala:91)
-	at org.apache.spark.sql.execution.exchange.ShuffleExchange$$anonfun$doExecute$1.apply(ShuffleExchange.scala:128)
-	at org.apache.spark.sql.execution.exchange.ShuffleExchange$$anonfun$doExecute$1.apply(ShuffleExchange.scala:119)
-	at org.apache.spark.sql.catalyst.errors.package$.attachTree(package.scala:52)
-	at org.apache.spark.sql.execution.exchange.ShuffleExchange.doExecute(ShuffleExchange.scala:119)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:117)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:117)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$executeQuery$1.apply(SparkPlan.scala:138)
-	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
-	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:135)
-	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:116)
-	at org.apache.spark.sql.execution.InputAdapter.inputRDDs(WholeStageCodegenExec.scala:252)
-	at org.apache.spark.sql.execution.SortExec.inputRDDs(SortExec.scala:121)
-	at org.apache.spark.sql.execution.WholeStageCodegenExec.doExecute(WholeStageCodegenExec.scala:386)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:117)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:117)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$executeQuery$1.apply(SparkPlan.scala:138)
-	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
-	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:135)
-	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:116)
-	at org.apache.spark.sql.execution.SparkPlan.getByteArrayRdd(SparkPlan.scala:228)
-	at org.apache.spark.sql.execution.SparkPlan.executeCollect(SparkPlan.scala:275)
-	at org.apache.spark.sql.execution.SparkPlan.executeCollectPublic(SparkPlan.scala:298)
-	at org.apache.spark.sql.execution.QueryExecution.hiveResultString(QueryExecution.scala:133)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLDriver.run(SparkSQLDriver.scala:63)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver.processCmd(SparkSQLCLIDriver.scala:340)
-	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:376)
-	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:311)
-	at org.apache.hadoop.hive.cli.CliDriver.processReader(CliDriver.java:409)
-	at org.apache.hadoop.hive.cli.CliDriver.processFile(CliDriver.java:425)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver$.main(SparkSQLCLIDriver.scala:174)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver.main(SparkSQLCLIDriver.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:775)
-	at org.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:180)
-	at org.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:205)
-	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:119)
-	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
-org.apache.spark.SparkException: Job 0 cancelled because SparkContext was shut down
-	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:809)
-	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:807)
-	at scala.collection.mutable.HashSet.foreach(HashSet.scala:78)
-	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:807)
-	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:1808)
-	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:83)
-	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1727)
-	at org.apache.spark.SparkContext$$anonfun$stop$8.apply$mcV$sp(SparkContext.scala:1928)
-	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1320)
-	at org.apache.spark.SparkContext.stop(SparkContext.scala:1927)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLEnv$.stop(SparkSQLEnv.scala:67)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver$$anonfun$main$1.apply$mcV$sp(SparkSQLCLIDriver.scala:118)
-	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1951)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
-	at scala.util.Try$.apply(Try.scala:192)
-	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
-	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
-	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:54)
-	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:619)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2029)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2050)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2069)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2094)
-	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:944)
-	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
-	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
-	at org.apache.spark.rdd.RDD.withScope(RDD.scala:362)
-	at org.apache.spark.rdd.RDD.collect(RDD.scala:943)
-	at org.apache.spark.RangePartitioner$.sketch(Partitioner.scala:269)
-	at org.apache.spark.RangePartitioner.<init>(Partitioner.scala:131)
-	at org.apache.spark.sql.execution.exchange.ShuffleExchange$.prepareShuffleDependency(ShuffleExchange.scala:225)
-	at org.apache.spark.sql.execution.exchange.ShuffleExchange.prepareShuffleDependency(ShuffleExchange.scala:91)
-	at org.apache.spark.sql.execution.exchange.ShuffleExchange$$anonfun$doExecute$1.apply(ShuffleExchange.scala:128)
-	at org.apache.spark.sql.execution.exchange.ShuffleExchange$$anonfun$doExecute$1.apply(ShuffleExchange.scala:119)
-	at org.apache.spark.sql.catalyst.errors.package$.attachTree(package.scala:52)
-	at org.apache.spark.sql.execution.exchange.ShuffleExchange.doExecute(ShuffleExchange.scala:119)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:117)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:117)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$executeQuery$1.apply(SparkPlan.scala:138)
-	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
-	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:135)
-	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:116)
-	at org.apache.spark.sql.execution.InputAdapter.inputRDDs(WholeStageCodegenExec.scala:252)
-	at org.apache.spark.sql.execution.SortExec.inputRDDs(SortExec.scala:121)
-	at org.apache.spark.sql.execution.WholeStageCodegenExec.doExecute(WholeStageCodegenExec.scala:386)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:117)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:117)
-	at org.apache.spark.sql.execution.SparkPlan$$anonfun$executeQuery$1.apply(SparkPlan.scala:138)
-	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
-	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:135)
-	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:116)
-	at org.apache.spark.sql.execution.SparkPlan.getByteArrayRdd(SparkPlan.scala:228)
-	at org.apache.spark.sql.execution.SparkPlan.executeCollect(SparkPlan.scala:275)
-	at org.apache.spark.sql.execution.SparkPlan.executeCollectPublic(SparkPlan.scala:298)
-	at org.apache.spark.sql.execution.QueryExecution.hiveResultString(QueryExecution.scala:133)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLDriver.run(SparkSQLDriver.scala:63)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver.processCmd(SparkSQLCLIDriver.scala:340)
-	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:376)
-	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:311)
-	at org.apache.hadoop.hive.cli.CliDriver.processReader(CliDriver.java:409)
-	at org.apache.hadoop.hive.cli.CliDriver.processFile(CliDriver.java:425)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver$.main(SparkSQLCLIDriver.scala:174)
-	at org.apache.spark.sql.hive.thriftserver.SparkSQLCLIDriver.main(SparkSQLCLIDriver.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:775)
-	at org.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:180)
-	at org.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:205)
-	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:119)
-	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
-

@@ -1,201 +1,0 @@
-19/07/16 10:40:58 INFO metastore.HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
-19/07/16 10:40:58 INFO metastore.ObjectStore: ObjectStore, initialize called
-19/07/16 10:40:58 INFO DataNucleus.Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
-19/07/16 10:40:58 INFO DataNucleus.Persistence: Property datanucleus.cache.level2 unknown - will be ignored
-19/07/16 10:41:03 INFO metastore.ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
-19/07/16 10:41:04 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
-19/07/16 10:41:04 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
-19/07/16 10:41:07 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
-19/07/16 10:41:07 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
-19/07/16 10:41:08 INFO metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
-19/07/16 10:41:08 INFO metastore.ObjectStore: Initialized ObjectStore
-19/07/16 10:41:08 WARN metastore.ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 1.2.0
-19/07/16 10:41:08 WARN metastore.ObjectStore: Failed to get database default, returning NoSuchObjectException
-19/07/16 10:41:09 INFO metastore.HiveMetaStore: Added admin role in metastore
-19/07/16 10:41:09 INFO metastore.HiveMetaStore: Added public role in metastore
-19/07/16 10:41:09 INFO metastore.HiveMetaStore: No user is added in admin role, since config is empty
-19/07/16 10:41:10 INFO metastore.HiveMetaStore: 0: get_all_databases
-19/07/16 10:41:10 INFO HiveMetaStore.audit: ugi=root	ip=unknown-ip-addr	cmd=get_all_databases	
-19/07/16 10:41:10 INFO metastore.HiveMetaStore: 0: get_functions: db=default pat=*
-19/07/16 10:41:10 INFO HiveMetaStore.audit: ugi=root	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
-19/07/16 10:41:10 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
-19/07/16 10:41:10 INFO session.SessionState: Created local directory: /tmp/b8d70176-dd0e-48e1-907c-4e7e8da92566_resources
-19/07/16 10:41:10 INFO session.SessionState: Created HDFS directory: /tmp/hive/root/b8d70176-dd0e-48e1-907c-4e7e8da92566
-19/07/16 10:41:10 INFO session.SessionState: Created local directory: /tmp/root/b8d70176-dd0e-48e1-907c-4e7e8da92566
-19/07/16 10:41:10 INFO session.SessionState: Created HDFS directory: /tmp/hive/root/b8d70176-dd0e-48e1-907c-4e7e8da92566/_tmp_space.db
-19/07/16 10:41:16 WARN metastore.ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
-[Stage 0:>   (0 + 1) / 10][Stage 1:>  (0 + 0) / 180][Stage 3:>   (0 + 0) / 10][Stage 0:>   (0 + 2) / 10][Stage 1:>  (0 + 0) / 180][Stage 3:>   (0 + 0) / 10][Stage 0:>   (0 + 2) / 10][Stage 1:>  (0 + 1) / 180][Stage 3:>   (0 + 0) / 10][Stage 0:>   (2 + 1) / 10][Stage 1:>  (0 + 2) / 180][Stage 3:>   (0 + 0) / 10][Stage 0:>   (2 + 3) / 10][Stage 1:>  (0 + 3) / 180][Stage 3:>   (0 + 0) / 10][Stage 0:=>  (3 + 2) / 10][Stage 1:>  (0 + 6) / 180][Stage 3:>   (0 + 0) / 10][Stage 0:=>  (3 + 4) / 10][Stage 1:>  (0 + 6) / 180][Stage 3:>   (0 + 0) / 10][Stage 0:=>  (3 + 7) / 10][Stage 1:>  (0 + 9) / 180][Stage 3:>   (0 + 0) / 10][Stage 0:=>  (3 + 7) / 10][Stage 1:> (0 + 13) / 180][Stage 3:>   (0 + 0) / 10][Stage 0:==> (5 + 5) / 10][Stage 1:> (0 + 15) / 180][Stage 3:>   (0 + 0) / 10][Stage 0:==> (7 + 3) / 10][Stage 1:> (0 + 17) / 180][Stage 3:>   (0 + 0) / 10][Stage 1:> (0 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:> (1 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:> (3 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:> (4 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:> (8 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(10 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(12 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(14 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(15 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(17 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(20 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(21 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(23 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(24 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(29 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(30 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(33 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(36 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(37 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(38 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(40 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(41 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(42 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(43 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(44 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(47 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(49 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(54 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(55 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(56 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(57 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(59 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(60 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(61 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(62 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(63 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(64 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(65 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(67 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(70 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(73 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(75 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(77 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(79 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(80 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(81 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(83 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(85 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(88 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(89 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(94 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(95 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(98 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:>(99 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:(100 + 20) / 180][Stage 3:>   (0 + 0) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:(101 + 19) / 180][Stage 3:>   (0 + 1) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:(102 + 19) / 180][Stage 3:>   (2 + 1) / 10][Stage 4:=> (17 + 0) / 30][Stage 1:(102 + 19) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:=> (17 + 1) / 30][Stage 1:(103 + 19) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:=> (17 + 1) / 30][Stage 1:(107 + 19) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:=> (17 + 1) / 30][Stage 1:(109 + 19) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:=> (17 + 1) / 30][Stage 1:(111 + 18) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:=> (17 + 2) / 30][Stage 1:(114 + 17) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:=> (17 + 3) / 30][Stage 1:(115 + 17) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:=> (17 + 3) / 30][Stage 1:(118 + 17) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:=> (18 + 3) / 30][Stage 1:(119 + 16) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:=> (18 + 4) / 30][Stage 1:(119 + 16) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:=> (19 + 4) / 30][Stage 1:(120 + 16) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:=> (19 + 4) / 30][Stage 1:(120 + 16) / 180][Stage 3:=>  (3 + 0) / 10][Stage 4:==>(20 + 4) / 30][Stage 1:(120 + 16) / 180][Stage 3:=>  (4 + 1) / 10][Stage 4:==>(21 + 3) / 30][Stage 1:(122 + 15) / 180][Stage 3:===>(9 + 1) / 10][Stage 4:==>(23 + 1) / 30][Stage 1:(124 + 15) / 180][Stage 4:==>(23 + 1) / 30][Stage 7:>   (0 + 4) / 40][Stage 1:(126 + 14) / 180][Stage 4:==>(23 + 1) / 30][Stage 7:>   (0 + 5) / 40][Stage 1:(130 + 13) / 180][Stage 4:==>(23 + 1) / 30][Stage 7:>   (0 + 6) / 40][Stage 1:(131 + 13) / 180][Stage 4:==>(23 + 1) / 30][Stage 7:>   (0 + 6) / 40][Stage 1:(132 + 13) / 180][Stage 4:==>(23 + 1) / 30][Stage 7:>   (0 + 6) / 40][Stage 1:(135 + 13) / 180][Stage 4:==>(24 + 0) / 30][Stage 7:>   (0 + 6) / 40][Stage 1:(136 + 12) / 180][Stage 4:==>(24 + 0) / 30][Stage 7:>   (0 + 7) / 40][Stage 1:(136 + 12) / 180][Stage 4:==>(24 + 0) / 30][Stage 7:>   (3 + 4) / 40][Stage 1:(136 + 12) / 180][Stage 4:==>(24 + 1) / 30][Stage 7:>   (5 + 3) / 40][Stage 1:(136 + 12) / 180][Stage 4:==>(24 + 2) / 30][Stage 7:>   (6 + 2) / 40][Stage 1:(137 + 12) / 180][Stage 4:==>(24 + 2) / 30][Stage 7:>   (6 + 2) / 40][Stage 1:(140 + 12) / 180][Stage 4:==>(24 + 2) / 30][Stage 7:>   (6 + 2) / 40][Stage 1:(143 + 12) / 180][Stage 4:==>(24 + 6) / 30][Stage 7:>   (6 + 2) / 40][Stage 1:(144 + 12) / 180][Stage 4:==>(24 + 6) / 30][Stage 7:>   (7 + 2) / 40][Stage 1:(145 + 12) / 180][Stage 4:==>(24 + 6) / 30][Stage 7:>   (7 + 2) / 40][Stage 1:(147 + 12) / 180][Stage 4:==>(24 + 6) / 30][Stage 7:>   (7 + 2) / 40][Stage 1:(148 + 12) / 180][Stage 4:==>(24 + 6) / 30][Stage 7:>   (8 + 2) / 40][Stage 1:(148 + 12) / 180][Stage 4:==>(24 + 6) / 30][Stage 7:>   (9 + 2) / 40][Stage 1:(149 + 12) / 180][Stage 4:==>(24 + 6) / 30][Stage 7:>   (9 + 2) / 40][Stage 1:(151 + 12) / 180][Stage 4:==>(24 + 6) / 30][Stage 7:>  (10 + 1) / 40][Stage 1:(153 + 12) / 180][Stage 4:==>(24 + 6) / 30][Stage 7:>  (10 + 1) / 40][Stage 1:(156 + 12) / 180][Stage 4:==>(25 + 5) / 30][Stage 7:>  (10 + 1) / 40][Stage 1:(157 + 12) / 180][Stage 4:==>(25 + 5) / 30][Stage 7:>  (11 + 0) / 40][Stage 1:(159 + 12) / 180][Stage 4:==>(25 + 5) / 30][Stage 7:>  (11 + 0) / 40][Stage 1:(160 + 12) / 180][Stage 4:==>(25 + 5) / 30][Stage 7:>  (11 + 0) / 40][Stage 1:(160 + 12) / 180][Stage 4:==>(26 + 4) / 30][Stage 7:>  (11 + 0) / 40][Stage 1:(160 + 12) / 180][Stage 4:==>(29 + 1) / 30][Stage 7:>  (11 + 0) / 40][Stage 1:============> (160 + 12) / 180][Stage 7:====>            (11 + 0) / 40][Stage 1:============> (162 + 11) / 180][Stage 7:====>            (11 + 1) / 40][Stage 1:============> (163 + 10) / 180][Stage 7:====>            (11 + 2) / 40][Stage 1:============> (165 + 10) / 180][Stage 7:====>            (11 + 2) / 40][Stage 1:============> (166 + 10) / 180][Stage 7:====>            (11 + 2) / 40][Stage 1:==============>(169 + 8) / 180][Stage 7:====>            (11 + 4) / 40][Stage 1:==============>(171 + 8) / 180][Stage 7:====>            (11 + 4) / 40][Stage 1:==============>(172 + 8) / 180][Stage 7:=====>           (12 + 4) / 40][Stage 1:==============>(172 + 8) / 180][Stage 7:=====>           (13 + 4) / 40][Stage 1:==============>(173 + 7) / 180][Stage 7:=====>           (14 + 5) / 40][Stage 1:==============>(173 + 7) / 180][Stage 7:======>          (15 + 5) / 40][Stage 1:==============>(175 + 5) / 180][Stage 7:======>          (16 + 7) / 40][Stage 1:==============>(177 + 3) / 180][Stage 7:=======>         (17 + 9) / 40][Stage 1:==============>(178 + 2) / 180][Stage 7:======>         (17 + 10) / 40][Stage 1:==============>(178 + 2) / 180][Stage 7:=======>        (18 + 10) / 40][Stage 1:==============>(179 + 1) / 180][Stage 7:=======>        (18 + 11) / 40][Stage 7:=========================>                              (18 + 12) / 40][Stage 7:==========================>                             (19 + 11) / 40][Stage 2:>                 (0 + 5) / 10][Stage 7:========>       (20 + 10) / 40][Stage 2:>                 (0 + 5) / 10][Stage 7:========>        (21 + 9) / 40][Stage 2:>                 (0 + 7) / 10][Stage 7:==========>      (24 + 6) / 40][Stage 2:>                 (0 + 9) / 10][Stage 7:===========>     (27 + 3) / 40][Stage 2:>                (0 + 10) / 10][Stage 7:===========>     (28 + 2) / 40][Stage 2:>                (0 + 10) / 10][Stage 7:============>    (30 + 2) / 40][Stage 2:>                (0 + 10) / 10][Stage 7:=============>   (31 + 2) / 40][Stage 2:>                (0 + 10) / 10][Stage 7:=============>   (32 + 2) / 40][Stage 2:>                (0 + 10) / 10][Stage 7:==============>  (34 + 2) / 40][Stage 2:>                (0 + 10) / 10][Stage 7:===============> (36 + 1) / 40][Stage 2:>                (0 + 10) / 10][Stage 7:===============> (37 + 1) / 40][Stage 2:>                (0 + 10) / 10][Stage 7:================>(38 + 1) / 40][Stage 2:>                (0 + 10) / 10][Stage 7:================>(39 + 1) / 40][Stage 2:>                                                        (0 + 10) / 10][Stage 2:=====>                                                    (1 + 9) / 10][Stage 2:===========>                                              (2 + 8) / 10][Stage 2:=================>                                        (3 + 7) / 10][Stage 2:=======================>                                  (4 + 6) / 10][Stage 2:=============================>                            (5 + 5) / 10][Stage 2:==================================>                       (6 + 4) / 10][Stage 2:========================================>                 (7 + 3) / 10][Stage 2:==============================================>           (8 + 2) / 10][Stage 2:====================================================>     (9 + 1) / 10][Stage 5:>                                                        (0 + 10) / 10][Stage 5:=====>                                                    (1 + 9) / 10][Stage 5:===========>                                              (2 + 8) / 10][Stage 5:=================>                                        (3 + 7) / 10][Stage 5:=======================>                                  (4 + 6) / 10][Stage 5:==============================================>           (8 + 2) / 10][Stage 6:>                                                        (0 + 10) / 10][Stage 6:=====>                                                    (1 + 9) / 10][Stage 6:===========>                                              (2 + 8) / 10][Stage 6:=================>                                        (3 + 7) / 10][Stage 6:==================================>                       (6 + 4) / 10][Stage 6:====================================================>     (9 + 1) / 10][Stage 9:>                                                        (0 + 10) / 10][Stage 9:=================>                                        (3 + 7) / 10][Stage 9:=======================>                                  (4 + 6) / 10][Stage 9:=============================>                            (5 + 5) / 10][Stage 9:========================================>                 (7 + 3) / 10][Stage 9:==============================================>           (8 + 2) / 10][Stage 10:>                                                        (0 + 8) / 10][Stage 10:=====>                                                   (1 + 8) / 10][Stage 10:===========>                                             (2 + 8) / 10][Stage 10:======================>                                  (4 + 6) / 10][Stage 10:==================================>                      (6 + 4) / 10][Stage 10:=======================================>                 (7 + 3) / 10][Stage 10:=============================================>           (8 + 2) / 10][Stage 10:===================================================>     (9 + 1) / 10]                                                                                ALGERIA	1998	881557197
-ALGERIA	1997	1512479176
-ALGERIA	1996	1521070307
-ALGERIA	1995	1520748033
-ALGERIA	1994	1498206962
-ALGERIA	1993	1507467726
-ALGERIA	1992	1518378363
-ARGENTINA	1998	888853170
-ARGENTINA	1997	1522425074
-ARGENTINA	1996	1526982552
-ARGENTINA	1995	1514979791
-ARGENTINA	1994	1520728576
-ARGENTINA	1993	1514684250
-ARGENTINA	1992	1507151287
-BRAZIL	1998	880472395
-BRAZIL	1997	1498953624
-BRAZIL	1996	1499120071
-BRAZIL	1995	1498395200
-BRAZIL	1994	1518241110
-BRAZIL	1993	1509013139
-BRAZIL	1992	1502090812
-CANADA	1998	885992855
-CANADA	1997	1515082046
-CANADA	1996	1503657676
-CANADA	1995	1509689186
-CANADA	1994	1508304608
-CANADA	1993	1532166455
-CANADA	1992	1531505863
-CHINA	1998	897690156
-CHINA	1997	1540243743
-CHINA	1996	1532457092
-CHINA	1995	1536837631
-CHINA	1994	1529460032
-CHINA	1993	1531312297
-CHINA	1992	1525361023
-EGYPT	1998	874887064
-EGYPT	1997	1500300021
-EGYPT	1996	1513700364
-EGYPT	1995	1498380544
-EGYPT	1994	1497751910
-EGYPT	1993	1504079809
-EGYPT	1992	1509786965
-ETHIOPIA	1998	880987154
-ETHIOPIA	1997	1509498448
-ETHIOPIA	1996	1523856714
-ETHIOPIA	1995	1492827620
-ETHIOPIA	1994	1494493137
-ETHIOPIA	1993	1519030900
-ETHIOPIA	1992	1526887028
-FRANCE	1998	878820573
-FRANCE	1997	1511667682
-FRANCE	1996	1510226605
-FRANCE	1995	1505221365
-FRANCE	1994	1496475427
-FRANCE	1993	1506202057
-FRANCE	1992	1504686718
-GERMANY	1998	893624854
-GERMANY	1997	1517908427
-GERMANY	1996	1528823549
-GERMANY	1995	1532299102
-GERMANY	1994	1530592485
-GERMANY	1993	1527902559
-GERMANY	1992	1530420494
-INDIA	1998	891171138
-INDIA	1997	1527429176
-INDIA	1996	1528478485
-INDIA	1995	1532438742
-INDIA	1994	1518582917
-INDIA	1993	1511902473
-INDIA	1992	1517439186
-INDONESIA	1998	885182691
-INDONESIA	1997	1497338888
-INDONESIA	1996	1497524483
-INDONESIA	1995	1531312968
-INDONESIA	1994	1511242047
-INDONESIA	1993	1505251266
-INDONESIA	1992	1518619833
-IRAN	1998	894415714
-IRAN	1997	1522816101
-IRAN	1996	1538209901
-IRAN	1995	1533645896
-IRAN	1994	1540856592
-IRAN	1993	1523186800
-IRAN	1992	1536609802
-IRAQ	1998	896663581
-IRAQ	1997	1510946810
-IRAQ	1996	1523494814
-IRAQ	1995	1512097934
-IRAQ	1994	1501950439
-IRAQ	1993	1520862910
-IRAQ	1992	1527406931
-JAPAN	1998	887007309
-JAPAN	1997	1509042999
-JAPAN	1996	1525511492
-JAPAN	1995	1499359120
-JAPAN	1994	1509657963
-JAPAN	1993	1493958266
-JAPAN	1992	1511003259
-JORDAN	1998	883056149
-JORDAN	1997	1507835228
-JORDAN	1996	1507194503
-JORDAN	1995	1516577388
-JORDAN	1994	1498878586
-JORDAN	1993	1514157715
-JORDAN	1992	1517268856
-KENYA	1998	892952159
-KENYA	1997	1510634353
-KENYA	1996	1518750015
-KENYA	1995	1502077645
-KENYA	1994	1497766583
-KENYA	1993	1501836767
-KENYA	1992	1512309404
-MOROCCO	1998	887880492
-MOROCCO	1997	1517927994
-MOROCCO	1996	1509960006
-MOROCCO	1995	1516954436
-MOROCCO	1994	1513062689
-MOROCCO	1993	1513083427
-MOROCCO	1992	1520426364
-MOZAMBIQUE	1998	876243855
-MOZAMBIQUE	1997	1509171181
-MOZAMBIQUE	1996	1505292196
-MOZAMBIQUE	1995	1491879340
-MOZAMBIQUE	1994	1493981038
-MOZAMBIQUE	1993	1495424907
-MOZAMBIQUE	1992	1490899436
-PERU	1998	888883109
-PERU	1997	1524062042
-PERU	1996	1511417624
-PERU	1995	1504136452
-PERU	1994	1525475334
-PERU	1993	1509703889
-PERU	1992	1521490649
-ROMANIA	1998	884583236
-ROMANIA	1997	1518425804
-ROMANIA	1996	1530807448
-ROMANIA	1995	1517805504
-ROMANIA	1994	1518784033
-ROMANIA	1993	1514219209
-ROMANIA	1992	1534159405
-RUSSIA	1998	884872117
-RUSSIA	1997	1506271165
-RUSSIA	1996	1513471967
-RUSSIA	1995	1492668252
-RUSSIA	1994	1503041547
-RUSSIA	1993	1481034072
-RUSSIA	1992	1515770174
-SAUDI ARABIA	1998	881054523
-SAUDI ARABIA	1997	1515765002
-SAUDI ARABIA	1996	1514617555
-SAUDI ARABIA	1995	1511716722
-SAUDI ARABIA	1994	1509644166
-SAUDI ARABIA	1993	1510143904
-SAUDI ARABIA	1992	1512568769
-UNITED KINGDOM	1998	894858130
-UNITED KINGDOM	1997	1522510985
-UNITED KINGDOM	1996	1515171158
-UNITED KINGDOM	1995	1513450705
-UNITED KINGDOM	1994	1516646917
-UNITED KINGDOM	1993	1505586640
-UNITED KINGDOM	1992	1529996408
-UNITED STATES	1998	893252964
-UNITED STATES	1997	1534739199
-UNITED STATES	1996	1532708123
-UNITED STATES	1995	1532021841
-UNITED STATES	1994	1516890967
-UNITED STATES	1993	1531065106
-UNITED STATES	1992	1529899550
-VIETNAM	1998	892279938
-VIETNAM	1997	1520274657
-VIETNAM	1996	1525117150
-VIETNAM	1995	1514287438
-VIETNAM	1994	1524482814
-VIETNAM	1993	1530298980
-VIETNAM	1992	1516322061
