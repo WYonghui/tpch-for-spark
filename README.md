@@ -18,23 +18,16 @@
  - cp makefile.suite makefile
  - 修改makefile
 
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<title></title>
-	</head>
-	<body>
-		CC =  GCC  #使用GCC编辑  
-		#Current values for DATABASE are: INFORMIX, DB2, TDAT (Teradata)  
-		#SQLSERVER, SYBASE, ORACLE, VECTORWISE  
-		#Current values for MACHINE are: ATT, DOS, HP, IBM, ICL, MVS,SGI, SUN, U2200, VMS, LINUX, WIN32  
-		#Current values for WORKLOAD are: TPCH  
-		DATABASE=  SQLSERVER    #数据类型  
-		MACHINE = LINUX         #机器环境  
-		WORKLOAD =TPCH
-	</body>
-    </html>>
-	
+```
+CC =  GCC  #使用GCC编辑  
+	#Current values for DATABASE are: INFORMIX, DB2, TDAT (Teradata)  
+	#SQLSERVER, SYBASE, ORACLE, VECTORWISE  
+	#Current values for MACHINE are: ATT, DOS, HP, IBM, ICL, MVS,SGI, SUN, U2200, VMS, LINUX, WIN32  
+	#Current values for WORKLOAD are: TPCH  
+	DATABASE=  SQLSERVER    #数据类型  
+	MACHINE = LINUX         #机器环境  
+	WORKLOAD =TPCH  
+```
 
  - make 编译
  然后就会在dbgen目录下生成两个工具dbgen 和qgen
