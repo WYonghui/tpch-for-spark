@@ -1,8 +1,5 @@
 # TPC-H测试Spark Sql 
 	
-	标签（空格分隔）： spark tpc-h
-	
-	---
 	**1 TPC-H 介绍**
 	参考网址：http://www.tpc.org/tpch/
 	
