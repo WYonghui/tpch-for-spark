@@ -33,7 +33,7 @@ qgen:用于生成测试数据的sql语句,现在有22条查询,2条更新
 
 **3 dbgen工具**
             
-TPC-H数据库的组成被定义为由八个单独的表（基本表）组成,分别时part、 partuspp、 customer 、supplier 、orders、 lineitem 、nation、 region,除nation和region表外，其它表的大小与测试的数据量有关，即比例因SF。
+TPC-H数据库的组成被定义为由八个单独的表（基本表）组成,分别是：part、 partuspp、 customer 、supplier 、orders、 lineitem 、nation、 region。除nation和region表外，其它表的大小与测试的数据量有关，即比例因SF。
    **参数说明：**
 ```bash
 dbgen [-{vf}][-T {pcsoPSOL}]
@@ -69,17 +69,20 @@ for i in $(seq 10)
 do
 ./dbgen -S $i -s 30  -C 10 -v  
 done
-SERVICES="part partuspp customer supplier orders lineitem nation nation"
+SERVICES="part partuspp customer supplier orders lineitem nation region"
 for word in $SERVICES 
 do
         mkdir data/$word
         mv $word.tbl* data/$word
-        hadoop fs -put data/$word /data
+        hdfs dfs -put data/$word /data
 done
 ```
 *备注* lineitem表非常大，需要设置更多的分片
 
 **5.建表语句:sql/create_table.sql**
 
+```bash
+spark-sql -f sql/create_table.sql
+```
 **6.使用qgen生成sql语句: 在sql目录下是针对spark sql修改过的sql，可以直接使用**
 
