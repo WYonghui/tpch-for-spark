@@ -1,0 +1,71 @@
+19/07/16 09:27:15 INFO metastore.HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+19/07/16 09:27:15 INFO metastore.ObjectStore: ObjectStore, initialize called
+19/07/16 09:27:16 INFO DataNucleus.Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+19/07/16 09:27:16 INFO DataNucleus.Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+19/07/16 09:27:21 INFO metastore.ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+19/07/16 09:27:22 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/07/16 09:27:22 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/07/16 09:27:25 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/07/16 09:27:25 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/07/16 09:27:26 INFO metastore.MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+19/07/16 09:27:26 INFO metastore.ObjectStore: Initialized ObjectStore
+19/07/16 09:27:26 WARN metastore.ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 1.2.0
+19/07/16 09:27:26 WARN metastore.ObjectStore: Failed to get database default, returning NoSuchObjectException
+19/07/16 09:27:27 INFO metastore.HiveMetaStore: Added admin role in metastore
+19/07/16 09:27:27 INFO metastore.HiveMetaStore: Added public role in metastore
+19/07/16 09:27:27 INFO metastore.HiveMetaStore: No user is added in admin role, since config is empty
+19/07/16 09:27:27 INFO metastore.HiveMetaStore: 0: get_all_databases
+19/07/16 09:27:27 INFO HiveMetaStore.audit: ugi=root	ip=unknown-ip-addr	cmd=get_all_databases	
+19/07/16 09:27:27 INFO metastore.HiveMetaStore: 0: get_functions: db=default pat=*
+19/07/16 09:27:27 INFO HiveMetaStore.audit: ugi=root	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+19/07/16 09:27:27 INFO DataNucleus.Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+19/07/16 09:27:28 INFO session.SessionState: Created local directory: /tmp/b69b358c-86ec-480b-a878-bc3e5396ef6b_resources
+19/07/16 09:27:28 INFO session.SessionState: Created HDFS directory: /tmp/hive/root/b69b358c-86ec-480b-a878-bc3e5396ef6b
+19/07/16 09:27:28 INFO session.SessionState: Created local directory: /tmp/root/b69b358c-86ec-480b-a878-bc3e5396ef6b
+19/07/16 09:27:28 INFO session.SessionState: Created HDFS directory: /tmp/hive/root/b69b358c-86ec-480b-a878-bc3e5396ef6b/_tmp_space.db
+19/07/16 09:27:34 WARN metastore.ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+[Stage 0:>                (0 + 19) / 40][Stage 1:>                 (0 + 1) / 10][Stage 0:>                (0 + 20) / 40][Stage 1:=>                (1 + 0) / 10][Stage 0:====>           (10 + 17) / 40][Stage 1:=>                (1 + 2) / 10][Stage 0:======>         (16 + 17) / 40][Stage 1:=>                (1 + 2) / 10][Stage 0:=======>        (19 + 16) / 40][Stage 1:=>                (1 + 3) / 10][Stage 0:=======>        (19 + 16) / 40][Stage 1:===>              (2 + 2) / 10][Stage 0:=======>        (19 + 16) / 40][Stage 1:=====>            (3 + 1) / 10][Stage 0:========>       (20 + 15) / 40][Stage 1:=======>          (4 + 1) / 10][Stage 0:========>       (20 + 15) / 40][Stage 1:=========>        (5 + 0) / 10][Stage 0:===========>    (28 + 12) / 40][Stage 1:=========>        (5 + 1) / 10][Stage 0:==============>  (33 + 7) / 40][Stage 1:=========>        (5 + 4) / 10][Stage 0:==============>  (35 + 5) / 40][Stage 1:=========>        (5 + 4) / 10][Stage 0:==============>  (35 + 5) / 40][Stage 1:==============>   (8 + 2) / 10][Stage 0:==============>  (35 + 5) / 40][Stage 1:================> (9 + 1) / 10][Stage 0:=================================================>       (35 + 5) / 40][Stage 2:>                                                        (0 + 10) / 10][Stage 2:=====>                                                    (1 + 9) / 10][Stage 2:=======================>                                  (4 + 6) / 10][Stage 2:==================================>                       (6 + 4) / 10][Stage 2:==============================================>           (8 + 2) / 10]                                                                                0	1500078
+10	199159
+9	196056
+11	187248
+8	175435
+12	168100
+13	149095
+7	140482
+19	140168
+18	139500
+20	136896
+14	135608
+17	135290
+16	130640
+15	130288
+21	127811
+22	114514
+6	98056
+23	97466
+24	80386
+25	63250
+5	58644
+26	47643
+27	35048
+4	29380
+28	24198
+29	16366
+3	11487
+30	10775
+31	6947
+32	4152
+2	3398
+33	2529
+34	1474
+35	798
+1	711
+36	482
+37	215
+38	123
+39	56
+40	28
+41	11
+42	5
+44	2
+43	2
