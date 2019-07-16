@@ -18,7 +18,7 @@
  - cp makefile.suite makefile
  - 修改makefile
 
-```
+```bash
 CC =  GCC  #使用GCC编辑  
 	#Current values for DATABASE are: INFORMIX, DB2, TDAT (Teradata)  
 	#SQLSERVER, SYBASE, ORACLE, VECTORWISE  
