@@ -21,9 +21,9 @@ CC =  GCC  #使用GCC编辑
 #SQLSERVER, SYBASE, ORACLE, VECTORWISE  
 #Current values for MACHINE are: ATT, DOS, HP, IBM, ICL, MVS,SGI, SUN, U2200, VMS, LINUX, WIN32  
 #Current values for WORKLOAD are: TPCH  
-DATABASE=  SQLSERVER    #数据类型  
-MACHINE = LINUX         #机器环境  
-WORKLOAD =TPCH  
+DATABASE=SQLSERVER    #数据类型  
+MACHINE=LINUX         #机器环境  
+WORKLOAD=TPCH  
 ```
 
  - make 编译
@@ -53,8 +53,9 @@ dbgen [-v] [-O m] [-s <scale>] [-U <updates>]
     
 *举例说明*：dbgen 生成100个中第一个10G的customer表
 
+```bash
 dbgen -S 1 -s 10 -T c -C 100 -v 
-
+```
 这里边的S和C需要配合使用
 
   
@@ -80,5 +81,5 @@ done
 
 **5.建表语句:sql/create_table.sql**
 
-**6 使用qgen生成sql语句: 在sql目录下是针对spark sql修改过的sql，可以直接使用**
+**6.使用qgen生成sql语句: 在sql目录下是针对spark sql修改过的sql，可以直接使用**
 
