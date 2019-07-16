@@ -62,21 +62,8 @@ dbgen -S 1 -s 10 -T c -C 100 -v
 **4 生成元数据**
         在实际测试环境中，生成30G数据，并将元数据分成10个分片。
         具体操作:`dbgen -S 1 -s 30  -C 10 -v` 
-        创建脚本create_data.sh实现生成数据，并上传到集群/data目录
+        使用脚本create_data.sh生成数据，并上传到集群/data目录
 
-```bash
-for i in $(seq 10)
-do
-./dbgen -S $i -s 30  -C 10 -v  
-done
-SERVICES="part partuspp customer supplier orders lineitem nation region"
-for word in $SERVICES 
-do
-        mkdir data/$word
-        mv $word.tbl* data/$word
-        hdfs dfs -put data/$word /data
-done
-```
 *备注* lineitem表非常大，需要设置更多的分片
 
 **5.建表语句:sql/create_table.sql**
@@ -84,5 +71,7 @@ done
 ```bash
 spark-sql -f sql/create_table.sql
 ```
+*备注* 需要修改create_table.sql中hdfs文件路径
+
 **6.使用qgen生成sql语句: 在sql目录下是针对spark sql修改过的sql，可以直接使用**
 

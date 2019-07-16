@@ -17,8 +17,9 @@ do
   done 
 done
 
+#将上传到hdfs
 # SERVICES="part partuspp customer supplier orders lineitem nation region"
-# HDFS-PATH="/data"
+# HDFS-PATH="/wyh/dataset/tpch/"
 # for word in $SERVICES
 # do
 #  mkdir data
